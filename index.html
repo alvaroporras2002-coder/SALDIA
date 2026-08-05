@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#123247">
-  <meta name="description" content="Saldía: prototipo local para organizar y gestionar deudas.">
-  <title>Saldía · Prototipo descargable</title>
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="description" content="Saldía: prototipo minimalista para organizar, planificar y gestionar deudas.">
+  <title>Saldía · Prototipo minimalista</title>
   <style>
 :root{--navy:#123247;--navy2:#1d4a60;--teal:#1fa58a;--teal2:#167d69;--soft:#e7f5f2;--blue:#eaf3f8;--bg:#f3f6f7;--card:#fff;--text:#23323a;--muted:#687780;--line:#dfe7ea;--amber:#e7a636;--amberSoft:#fff5df;--red:#c94c4c;--redSoft:#fff0f0;--shadow:0 10px 30px rgba(18,50,71,.08);--radius:18px;--side:260px;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color-scheme:light}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(31,165,138,.25);outline-offset:2px}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.18}h1{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.045em}h2{font-size:1.35rem;letter-spacing:-.025em}h3{font-size:1.02rem}.hidden{display:none!important}.muted{color:var(--muted)}.centered{text-align:center;display:block}.kicker{display:block;color:var(--teal2);font-weight:850;font-size:.72rem;letter-spacing:.1em;margin-bottom:8px}.card{background:var(--card);border:1px solid rgba(207,220,225,.9);border-radius:var(--radius);box-shadow:var(--shadow)}.pad{padding:22px}.btn{min-height:42px;border:0;border-radius:12px;padding:10px 15px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.16s;text-decoration:none}.btn:hover{transform:translateY(-1px)}.primary{background:var(--navy);color:#fff;box-shadow:0 8px 18px rgba(18,50,71,.16)}.primary:hover{background:var(--navy2)}.accent{background:var(--teal);color:#fff}.accent:hover{background:var(--teal2)}.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}.ghost{background:transparent;color:var(--muted)}.danger{background:var(--redSoft);color:var(--red)}.soft-btn{background:var(--blue);color:var(--navy)}.small-btn{min-height:34px;padding:6px 10px;font-size:.8rem;border-radius:9px}.wide{width:100%}.button-row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.input{width:100%;min-height:43px;border:1px solid #cddadf;border-radius:11px;background:#fff;color:var(--text);padding:10px 12px;margin-top:6px}.input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(31,165,138,.1);outline:0}textarea.input{min-height:95px;resize:vertical}label{font-size:.78rem;font-weight:750;color:#46565f}.form-2,.form-3{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.form-3{grid-template-columns:repeat(3,minmax(0,1fr))}.full{grid-column:1/-1}.pill,.badge{display:inline-flex;align-items:center;border-radius:999px;white-space:nowrap;font-weight:750}.pill{padding:6px 10px;font-size:.75rem;background:var(--blue);color:var(--navy)}.badge{padding:4px 8px;font-size:.7rem}.status-current,.status-paid{background:var(--soft);color:#126b59}.status-late{background:var(--amberSoft);color:#865b0d}.status-judicial{background:var(--redSoft);color:#9d3333}.status-agreement{background:#f0efff;color:#4d4b9c}.notice{display:flex;gap:11px;border-radius:14px;padding:14px 16px;align-items:flex-start}.notice b{display:block;margin-bottom:2px}.notice p{margin:0;font-size:.8rem}.info{background:var(--blue);color:#234d62}.success{background:var(--soft);color:#155f51}.warning{background:var(--amberSoft);color:#765317}.error{background:var(--redSoft);color:#8e3636}.stack{display:grid;gap:16px}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid-main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.75fr);gap:18px}.page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:22px}.page-head h1{margin-bottom:5px}.page-head p{margin-bottom:0;color:var(--muted);max-width:720px}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2,.section-head h3{margin-bottom:4px}.section-head p{margin:0;color:var(--muted);font-size:.8rem}.divider{height:1px;background:var(--line);margin:18px 0}.masked{filter:blur(7px);user-select:none}.desktop-only{display:inline-flex}
 .welcome{min-height:100vh;display:grid;place-items:center;padding:28px;background:radial-gradient(circle at 82% 15%,rgba(82,204,176,.22),transparent 28%),radial-gradient(circle at 12% 86%,rgba(18,50,71,.13),transparent 32%),linear-gradient(145deg,#f9fbfb,#eef5f4)}.welcome-grid{width:min(1160px,100%);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.75fr);gap:clamp(30px,6vw,80px);align-items:center}.logo-line,.brand,.mobile-brand{display:flex;align-items:center;gap:11px}.logo-line{margin-bottom:34px}.logo-line b,.brand b{display:block;font-size:1.4rem;letter-spacing:-.04em;color:var(--navy)}.logo-line small,.brand small{display:block;color:var(--muted);font-size:.72rem;margin-top:-3px}.logo-mark{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#d8fff5,#88dac7);color:var(--navy);font-weight:900;font-size:1.35rem;box-shadow:0 8px 20px rgba(18,50,71,.16)}.welcome-copy h1{font-size:clamp(2.5rem,6vw,4.5rem);color:var(--navy);margin-bottom:18px}.welcome-copy>p{font-size:1.08rem;color:#50616a;max-width:650px}.features{display:grid;gap:10px;margin-top:24px;color:#40525a;font-weight:650}.onboarding{padding:28px}.onboarding h2{margin-bottom:6px}.profile-picker{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}.profile-choice{border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 7px;color:var(--muted);font-size:.75rem;font-weight:750}.profile-choice span{display:block;font-size:1.2rem;margin-bottom:5px}.profile-choice.active{border:2px solid var(--teal);padding:10px 6px;background:var(--soft);color:var(--navy)}.onboarding label{display:block;margin-bottom:12px}.or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.72rem;margin:13px 0}.or:before,.or:after{content:"";height:1px;background:var(--line);flex:1}
@@ -15,7 +15,776 @@
 .modal-root{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal-root.open{display:flex}.backdrop{position:absolute;inset:0;background:rgba(10,28,39,.58);backdrop-filter:blur(5px)}.modal{position:relative;width:min(620px,100%);max-height:88vh;overflow:auto;border-radius:20px;background:#fff;box-shadow:0 28px 80px rgba(0,0,0,.26);animation:pop .18s ease}.modal.wide{width:min(900px,100%)}.modal-head{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(8px)}.modal-head h2{margin:0;font-size:1.18rem}.close{width:38px;height:38px;border:0;border-radius:10px;background:#f5f7f8;font-size:1.3rem;color:var(--muted)}.modal-body{padding:20px}.modal-foot{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;margin-top:19px;padding-top:16px;border-top:1px solid var(--line)}@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:none}}.toast-root{position:fixed;right:18px;bottom:18px;z-index:200;display:grid;gap:8px;width:min(350px,calc(100vw - 36px))}.toast{padding:12px 14px;border-radius:12px;background:#17394b;color:#fff;box-shadow:0 14px 34px rgba(0,0,0,.22)}.toast.good{background:#146b5b}.toast.bad{background:#983d3d}.toast b,.toast span{display:block}.toast span{font-size:.72rem;opacity:.82;margin-top:2px}
 @media(max-width:1120px){.metrics{grid-template-columns:repeat(2,1fr)}.grid-main{grid-template-columns:1fr}.strategy-grid{grid-template-columns:1fr}.strategy p{min-height:0}}@media(max-width:900px){:root{--side:225px}.welcome-grid{grid-template-columns:1fr;max-width:680px}.welcome-copy{text-align:center}.logo-line{justify-content:center}.features span{text-align:center}.hero-grid{grid-template-columns:1fr}.hero-stat{max-width:430px}.form-3{grid-template-columns:1fr 1fr}}@media(max-width:760px){body{padding-bottom:72px}.sidebar{display:none}.main{margin:0}.topbar{min-height:64px;padding:9px 13px}.topbar>div:first-child{display:none}.mobile-brand{display:flex}.mobile-brand .logo-mark{width:33px;height:33px;border-radius:10px;font-size:1rem;box-shadow:none}.space-select{max-width:135px;min-height:38px;font-size:.76rem}.desktop-only{display:none}.content{padding:18px 13px 28px}.page-head{align-items:flex-start}.page-head .button-row{display:none}.page-head h1{font-size:1.7rem}.hero{padding:21px;border-radius:20px}.hero h1{font-size:1.75rem}.metrics{gap:9px}.metric{padding:14px}.metric small{display:none}.grid-2,.grid-main{grid-template-columns:1fr}.pad{padding:17px}.desktop-table{display:none}.mobile-cards{display:grid}.form-2,.form-3{grid-template-columns:1fr}.full{grid-column:auto}.toolbar{align-items:stretch}.toolbar-group{width:100%}.search{min-width:0;flex:1}.calendar-head h2{font-size:1.05rem}.day{min-height:70px;padding:5px}.weekday{font-size:.55rem}.event{width:7px;height:7px;border-radius:50%;padding:0;font-size:0}.events{display:flex;gap:3px;flex-wrap:wrap}.report-grid{grid-template-columns:1fr}.chat{min-height:calc(100vh - 185px)}.message{max-width:90%}.bottom-nav{position:fixed;z-index:50;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(5,1fr);padding:5px 4px calc(5px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(15px);border-top:1px solid var(--line);box-shadow:0 -8px 25px rgba(18,50,71,.08)}.bottom-nav button{border:0;background:transparent;color:#76858c;display:grid;justify-items:center;gap:1px;font-size:.59rem;font-weight:750}.bottom-nav button span{font-size:1.1rem}.bottom-nav button.active{color:var(--teal2)}.toast-root{bottom:82px}.modal-root{align-items:flex-end;padding:0}.modal,.modal.wide{width:100%;max-height:92vh;border-radius:22px 22px 0 0}.welcome{padding:18px 13px;align-items:start}.welcome-copy{padding-top:8px}.welcome-copy h1{font-size:2.55rem}.features{display:none}.onboarding{padding:20px}.profile-picker{grid-template-columns:1fr}.profile-choice{display:flex;align-items:center;gap:9px;text-align:left}.profile-choice span{margin:0}.more-grid{grid-template-columns:1fr 1fr}}@media(max-width:430px){.metric b{font-size:1.05rem}.quick-grid{grid-template-columns:1fr 1fr}.top-actions .icon-btn{display:none}}@media print{.sidebar,.topbar,.bottom-nav,.btn,.ad,.toolbar{display:none!important}.main{margin:0}.content{padding:0}.card,.hero{box-shadow:none}body{background:#fff}}
 
-  </style>
+  
+/* =========================================================
+   Saldía — rediseño minimalista y limpio
+   Paleta restringida, jerarquía tipográfica y datos primero.
+   ========================================================= */
+:root{
+  --navy:#111111;
+  --navy2:#212529;
+  --teal:#10B981;
+  --teal2:#059669;
+  --soft:#ECFDF5;
+  --blue:#F4F5F7;
+  --bg:#F8F9FA;
+  --card:#FFFFFF;
+  --text:#111111;
+  --muted:#6B7280;
+  --line:#E5E7EB;
+  --line-strong:#D1D5DB;
+  --amber:#D97706;
+  --amberSoft:#FFFBEB;
+  --red:#EF4444;
+  --redSoft:#FEF2F2;
+  --shadow:0 1px 2px rgba(17,24,39,.04);
+  --shadow-float:0 16px 40px rgba(17,24,39,.10);
+  --radius:16px;
+  --side:240px;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Arial,sans-serif;
+  color-scheme:light;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-size:15px;
+  line-height:1.55;
+  letter-spacing:-.005em;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:3px solid rgba(16,185,129,.22);
+  outline-offset:2px;
+}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{color:var(--text);line-height:1.18}
+h1{font-size:clamp(2rem,4vw,2.65rem);letter-spacing:-.045em;font-weight:720}
+h2{font-size:1.15rem;letter-spacing:-.025em;font-weight:680}
+h3{font-size:.98rem;letter-spacing:-.015em;font-weight:650}
+b,strong,.metric b,.balance-amount,.list-value b,.mini b,.hero-stat b{
+  font-variant-numeric:tabular-nums lining-nums;
+}
+.hidden{display:none!important}
+.muted{color:var(--muted)!important}
+.centered{text-align:center;display:block}
+.kicker,.eyebrow{
+  display:block;
+  margin-bottom:8px;
+  color:var(--teal2);
+  font-size:.68rem;
+  font-weight:760;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.masked{filter:blur(7px);user-select:none}
+.desktop-only{display:inline-flex}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:none;
+}
+.pad{padding:24px}
+.stack{display:grid;gap:24px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.grid-main{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);gap:24px}
+.divider{height:1px;background:var(--line);margin:24px 0}
+
+.btn{
+  min-height:44px;
+  border:1px solid transparent;
+  border-radius:11px;
+  padding:10px 16px;
+  font-size:.86rem;
+  font-weight:650;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  text-decoration:none;
+  transition:background-color .16s ease,border-color .16s ease,color .16s ease,transform .16s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.primary{background:var(--text);color:#fff;border-color:var(--text);box-shadow:none}
+.primary:hover{background:#2A2A2A}
+.accent{background:var(--teal);color:#052E25;border-color:var(--teal)}
+.accent:hover{background:#0EA371}
+.secondary{background:#fff;color:var(--text);border-color:var(--line-strong)}
+.secondary:hover{border-color:#9CA3AF;background:#FAFAFA}
+.ghost{background:transparent;color:var(--muted);border-color:transparent}
+.ghost:hover{background:var(--blue);color:var(--text)}
+.danger{background:var(--redSoft);color:#B42318;border-color:#FECACA}
+.soft-btn{background:var(--blue);color:var(--text);border-color:var(--line)}
+.small-btn{min-height:34px;padding:6px 10px;font-size:.75rem;border-radius:9px}
+.wide{width:100%}
+.button-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+label{font-size:.76rem;font-weight:600;color:#374151}
+.input{
+  width:100%;
+  min-height:44px;
+  margin-top:7px;
+  padding:10px 12px;
+  border:1px solid var(--line-strong);
+  border-radius:10px;
+  background:#fff;
+  color:var(--text);
+  box-shadow:none;
+}
+.input:hover{border-color:#9CA3AF}
+.input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(16,185,129,.10);outline:0}
+textarea.input{min-height:104px;resize:vertical}
+.form-2,.form-3{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.form-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.full{grid-column:1/-1}
+
+.pill,.badge,.tag,.chip{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  white-space:nowrap;
+  font-weight:650;
+}
+.pill{padding:6px 10px;font-size:.7rem;background:var(--blue);color:#374151;border:1px solid var(--line)}
+.badge{padding:4px 8px;font-size:.67rem;border:1px solid transparent}
+.status-current,.status-paid{background:var(--soft);color:#047857;border-color:#A7F3D0}
+.status-late{background:var(--amberSoft);color:#92400E;border-color:#FDE68A}
+.status-judicial{background:var(--redSoft);color:#B42318;border-color:#FECACA}
+.status-agreement{background:#F5F3FF;color:#6D28D9;border-color:#DDD6FE}
+
+.notice{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:14px 16px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+}
+.notice>b{width:24px;height:24px;display:grid;place-items:center;flex:none;border-radius:50%;font-size:.76rem}
+.notice b{margin-bottom:2px}
+.notice p{margin:0;font-size:.78rem}
+.info{background:#F9FAFB;color:#374151}
+.info>b{background:#E5E7EB;color:#374151}
+.success{background:var(--soft);color:#065F46;border-color:#A7F3D0}
+.success>b{background:#D1FAE5}
+.warning{background:var(--amberSoft);color:#78350F;border-color:#FDE68A}
+.warning>b{background:#FEF3C7}
+.error{background:var(--redSoft);color:#991B1B;border-color:#FECACA}
+.error>b{background:#FEE2E2}
+
+/* Bienvenida */
+.welcome{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  padding:40px;
+  background:var(--bg);
+}
+.welcome-grid{
+  width:min(1080px,100%);
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(360px,.72fr);
+  gap:clamp(48px,8vw,100px);
+  align-items:center;
+}
+.welcome-copy{padding:16px 0}
+.logo-line,.brand,.mobile-brand{display:flex;align-items:center;gap:12px}
+.logo-line{margin-bottom:54px}
+.logo-line b,.brand b{display:block;font-size:1.25rem;letter-spacing:-.035em;color:var(--text)}
+.logo-line small,.brand small{display:block;color:var(--muted);font-size:.7rem;margin-top:-2px}
+.logo-mark{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:var(--text);
+  color:#fff;
+  border:1px solid var(--text);
+  box-shadow:none;
+  font-weight:750;
+  font-size:1.18rem;
+}
+.welcome-copy h1{font-size:clamp(3rem,6vw,5.2rem);max-width:760px;margin-bottom:22px;color:var(--text)}
+.welcome-copy>p{max-width:620px;font-size:1.04rem;color:#4B5563}
+.features{display:grid;gap:13px;margin-top:30px;color:#374151;font-size:.9rem;font-weight:560}
+.features span{display:flex;align-items:center;gap:9px}
+.features span::first-letter{color:var(--teal)}
+.onboarding{padding:30px;border-radius:18px;box-shadow:var(--shadow)}
+.onboarding h2{margin-bottom:6px}
+.profile-picker{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.profile-choice{
+  min-height:92px;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:12px;
+  padding:14px 8px;
+  color:var(--muted);
+  font-size:.72rem;
+  font-weight:650;
+}
+.profile-choice span{display:grid;place-items:center;width:26px;height:26px;margin:0 auto 9px}
+.profile-choice svg{width:22px;height:22px;stroke-width:1.7}
+.profile-choice.active{border:1px solid var(--teal);padding:14px 8px;background:var(--soft);color:#065F46;box-shadow:0 0 0 2px rgba(16,185,129,.08)}
+.or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.7rem;margin:16px 0}
+.or::before,.or::after{content:"";height:1px;background:var(--line);flex:1}
+
+/* Navegación */
+.sidebar{
+  position:fixed;
+  inset:0 auto 0 0;
+  width:var(--side);
+  padding:22px 16px;
+  display:flex;
+  flex-direction:column;
+  overflow:auto;
+  z-index:30;
+  background:#fff;
+  color:var(--text);
+  border-right:1px solid var(--line);
+}
+.brand{border:0;background:transparent;color:var(--text);text-align:left;padding:0 8px 28px}
+.brand .logo-mark{width:38px;height:38px;border-radius:10px;font-size:1rem}
+.brand b{color:var(--text)}
+.brand small{color:var(--muted)}
+.nav-title{padding:8px 10px 6px;color:#9CA3AF;font-size:.61rem;font-weight:750;letter-spacing:.12em}
+.sidebar nav{display:grid;gap:3px;margin-bottom:12px}
+.sidebar nav button{
+  min-height:43px;
+  padding:10px 11px;
+  border:0;
+  border-radius:10px;
+  background:transparent;
+  color:#6B7280;
+  text-align:left;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:.86rem;
+  font-weight:590;
+}
+.sidebar nav button:hover{background:#F9FAFB;color:var(--text)}
+.sidebar nav button.active{background:var(--soft);color:#047857;font-weight:650;box-shadow:none}
+.nav-icon{width:19px;height:19px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.local-box{
+  margin-top:auto;
+  padding:13px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#F9FAFB;
+  color:var(--muted);
+  font-size:.68rem;
+}
+.local-box b,.local-box span{display:block}
+.local-box b{color:#374151;margin-bottom:4px}
+.local-box i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--teal);margin-right:7px}
+
+.main{margin-left:var(--side);min-height:100vh}
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:20;
+  min-height:72px;
+  padding:12px clamp(24px,3vw,40px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+.topbar h2{margin:0;font-size:.94rem;font-weight:650}
+.topbar small{color:var(--muted);font-size:.7rem}
+.top-actions{display:flex;align-items:center;gap:10px}
+.space-select{
+  min-height:42px;
+  max-width:220px;
+  padding:0 34px 0 12px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  color:var(--text);
+  font-size:.8rem;
+  font-weight:620;
+}
+.icon-btn{
+  width:42px;
+  height:42px;
+  padding:0;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  color:#4B5563;
+  display:grid;
+  place-items:center;
+}
+.icon-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.mobile-brand{display:none}
+.content{width:min(1320px,100%);margin:0 auto;padding:38px clamp(24px,3vw,40px) 72px}
+.bottom-nav{display:none}
+
+/* Encabezados */
+.page-head,.dashboard-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:28px;
+}
+.page-head h1,.dashboard-head h1{margin-bottom:7px}
+.page-head p,.dashboard-head p{margin-bottom:0;max-width:720px;color:var(--muted);font-size:.9rem}
+.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:20px}
+.section-head h2,.section-head h3{margin-bottom:4px}
+.section-head p{margin:0;color:var(--muted);font-size:.76rem}
+
+/* Dashboard principal */
+.dashboard-head{align-items:center}
+.dashboard-head .button-row{justify-content:flex-end}
+.balance-overview{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(300px,.65fr);
+  overflow:hidden;
+  margin-bottom:24px;
+  background:#fff;
+}
+.balance-main{padding:32px 34px 26px;min-width:0}
+.balance-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:6px}
+.balance-label{font-size:.78rem;color:var(--muted);font-weight:560}
+.balance-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 8px;border-radius:999px;background:var(--soft);color:#047857;font-size:.67rem;font-weight:670;border:1px solid #A7F3D0}
+.balance-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.balance-amount{display:block;margin:3px 0 8px;font-size:clamp(2.35rem,5vw,3.55rem);line-height:1.05;letter-spacing:-.055em;font-weight:720;color:var(--text)}
+.balance-caption{display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.76rem}
+.balance-caption b{color:#374151;font-weight:620}
+.sparkline-wrap{margin-top:25px;height:112px;position:relative}
+.sparkline-wrap svg{display:block;width:100%;height:100%;overflow:visible}
+.sparkline-area{fill:rgba(16,185,129,.08)}
+.sparkline-line{fill:none;stroke:var(--teal);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.sparkline-dot{fill:#fff;stroke:var(--teal);stroke-width:3}
+.sparkline-labels{display:flex;justify-content:space-between;margin-top:4px;color:#9CA3AF;font-size:.62rem}
+.action-panel{padding:30px;border-left:1px solid var(--line);background:#F9FAFB;display:flex;flex-direction:column;justify-content:center}
+.action-panel .eyebrow{margin-bottom:10px}
+.action-panel h2{margin-bottom:9px;font-size:1.35rem;letter-spacing:-.035em}
+.action-panel p{margin-bottom:18px;color:var(--muted);font-size:.8rem}
+.action-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.action-meta div{padding:10px 0;border-top:1px solid var(--line)}
+.action-meta span,.action-meta b{display:block}
+.action-meta span{font-size:.63rem;color:var(--muted)}
+.action-meta b{margin-top:3px;font-size:.78rem;color:#374151}
+
+.summary-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  margin-bottom:24px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#fff;
+}
+.summary-item{padding:18px 20px;border-right:1px solid var(--line)}
+.summary-item:last-child{border-right:0}
+.summary-item span,.summary-item b,.summary-item small{display:block}
+.summary-item span{font-size:.68rem;color:var(--muted)}
+.summary-item b{margin:6px 0 2px;font-size:1.18rem;letter-spacing:-.025em;font-weight:680}
+.summary-item small{color:#9CA3AF;font-size:.63rem}
+.amount-positive{color:#047857!important}
+.amount-negative{color:#B42318!important}
+
+.dashboard-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(300px,.72fr);gap:24px}
+.activity-list{display:grid;gap:15px}
+.activity-row{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.activity-main{display:flex;align-items:center;gap:13px;min-width:0}
+.activity-icon{width:38px;height:38px;border:1px solid var(--line);border-radius:11px;display:grid;place-items:center;color:#4B5563;flex:none;background:#fff}
+.activity-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.activity-copy{min-width:0}
+.activity-copy b,.activity-copy span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.activity-copy b{font-size:.84rem;font-weight:620}
+.activity-copy span{margin-top:2px;color:var(--muted);font-size:.68rem}
+.activity-value{text-align:right;flex:none}
+.activity-value b,.activity-value span{display:block}
+.activity-value b{font-size:.82rem;font-weight:650}
+.activity-value span{margin-top:2px;color:var(--muted);font-size:.64rem}
+
+.donut-layout{display:grid;grid-template-columns:150px 1fr;gap:24px;align-items:center}
+.donut{
+  width:146px;
+  aspect-ratio:1;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  position:relative;
+}
+.donut::after{content:"";position:absolute;inset:25px;border-radius:50%;background:#fff;border:1px solid rgba(229,231,235,.8)}
+.donut-center{position:relative;z-index:1;text-align:center}
+.donut-center span,.donut-center b{display:block}
+.donut-center span{font-size:.61rem;color:var(--muted)}
+.donut-center b{margin-top:3px;font-size:.83rem;font-weight:680}
+.legend-list{display:grid;gap:13px}
+.legend-row{display:grid;grid-template-columns:10px 1fr auto;gap:9px;align-items:center}
+.legend-dot{width:8px;height:8px;border-radius:50%}
+.legend-row span{font-size:.72rem;color:#4B5563;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.legend-row b{font-size:.72rem;font-weight:650}
+
+/* Hero heredado, ahora sobrio */
+.hero{position:relative;overflow:hidden;background:#fff;color:var(--text);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:none}
+.hero::after{display:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);gap:28px;align-items:center}
+.hero h1{font-size:clamp(1.8rem,3.6vw,2.5rem);margin-bottom:12px;color:var(--text)}
+.hero p{color:var(--muted);max-width:700px}
+.hero .ghost{color:var(--text);background:transparent}
+.hero-stat{border:1px solid var(--line);background:#F9FAFB;border-radius:13px;padding:20px}
+.hero-stat span,.hero-stat small{display:block;color:var(--muted);font-size:.72rem}
+.hero-stat b{display:block;font-size:clamp(1.55rem,3vw,2.25rem);letter-spacing:-.045em;margin:6px 0;color:var(--text)}
+
+/* Métricas secundarias */
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0;
+  margin:22px 0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#fff;
+}
+.metric.card{padding:19px 20px;border:0;border-right:1px solid var(--line);border-radius:0;background:#fff;box-shadow:none}
+.metric.card:last-child{border-right:0}
+.metric .metric-icon{width:28px;height:28px;margin-bottom:13px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#4B5563;display:grid;place-items:center;font-size:.78rem}
+.metric .metric-icon.green{background:var(--soft);color:#047857;border-color:#A7F3D0}
+.metric .metric-icon.orange{background:var(--amberSoft);color:#92400E;border-color:#FDE68A}
+.metric>span,.metric>b,.metric>small{display:block}
+.metric>span{font-size:.67rem;color:var(--muted)}
+.metric>b{margin:6px 0 2px;font-size:1.16rem;letter-spacing:-.025em;font-weight:680}
+.metric>small{color:#9CA3AF;font-size:.63rem}
+
+.progress{height:7px;overflow:hidden;border-radius:999px;background:#EEF0F2}
+.progress i{display:block;height:100%;border-radius:inherit;background:var(--teal)}
+.progress-copy{display:flex;justify-content:space-between;gap:14px;margin-top:9px;color:var(--muted);font-size:.68rem}
+.progress-copy b{color:#374151}
+
+.list{display:grid;gap:15px}
+.list-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0;border:0}
+.list-main{display:flex;align-items:center;gap:12px;min-width:0}
+.list-icon{width:38px;height:38px;border:1px solid var(--line);border-radius:11px;background:#fff;color:#4B5563;display:grid;place-items:center;flex:none}
+.list-copy{min-width:0}
+.list-copy b,.list-copy span,.list-value b,.list-value span{display:block}
+.list-copy b{font-size:.82rem;font-weight:620;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.list-copy span{margin-top:2px;color:var(--muted);font-size:.66rem}
+.list-value{text-align:right;flex:none}
+.list-value b{font-size:.8rem;font-weight:650}
+.list-value span{margin-top:2px;color:var(--muted);font-size:.63rem}
+
+.quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.quick{
+  min-height:86px;
+  padding:14px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  color:var(--text);
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  font-size:.78rem;
+  font-weight:620;
+  transition:border-color .16s ease,background-color .16s ease;
+}
+.quick:hover{background:#F9FAFB;border-color:var(--line-strong);box-shadow:none}
+.quick span{color:var(--teal2);font-size:1rem}
+
+.ad{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:14px 16px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+}
+.ad::after{content:"PUBLICIDAD";position:absolute;top:7px;right:10px;color:#9CA3AF;font-size:.52rem;letter-spacing:.1em}
+.ad-icon{width:34px;height:34px;border:1px solid var(--line);border-radius:9px;background:#F9FAFB;color:#6B7280;display:grid;place-items:center;font-size:.58rem;font-weight:720;flex:none}
+.ad b,.ad span{display:block}
+.ad b{font-size:.75rem;font-weight:610}
+.ad span{margin-top:2px;padding-right:44px;color:var(--muted);font-size:.64rem}
+
+.empty{text-align:center;padding:48px 24px}
+.empty-icon{width:58px;height:58px;margin:0 auto 18px;border:1px solid var(--line);border-radius:16px;background:#F9FAFB;color:#6B7280;display:grid;place-items:center;font-size:1.15rem}
+.empty p{max-width:520px;margin:0 auto 20px;color:var(--muted);font-size:.82rem}
+
+/* Listas, deudas y tablas */
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+.toolbar-group{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.search{min-width:260px}
+.table-wrap{overflow:auto;border-radius:0}
+table{width:100%;border-collapse:collapse}
+th{padding:12px 14px;border-bottom:1px solid var(--line);background:#fff;color:#9CA3AF;text-align:left;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+td{padding:15px 14px;border-bottom:1px solid #F0F1F2;vertical-align:middle;font-size:.8rem}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#FAFAFA}
+.table-actions{display:flex;justify-content:flex-end;gap:5px}
+.mobile-cards{display:none;gap:14px}
+.debt-card{padding:20px}
+.debt-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.debt-top h3{margin-bottom:3px}
+.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin:17px 0;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.mini{padding:12px;background:#fff;border-radius:0}
+.mini span,.mini b{display:block}
+.mini span{font-size:.63rem;color:var(--muted)}
+.mini b{margin-top:3px;font-size:.8rem}
+
+/* Estrategias */
+.strategy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.strategy{position:relative;padding:18px;border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--text);text-align:left}
+.strategy:hover{border-color:var(--line-strong)}
+.strategy.active{padding:18px;border:1px solid var(--teal);background:var(--soft);box-shadow:0 0 0 2px rgba(16,185,129,.07)}
+.strategy h3{margin:12px 0 6px}
+.strategy p{min-height:38px;color:var(--muted);font-size:.72rem}
+.strategy-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:var(--line)}
+.strategy-stats div{padding:9px;background:#fff;border-radius:0}
+.strategy.active .strategy-stats div{background:rgba(255,255,255,.72)}
+.strategy-stats span,.strategy-stats b{display:block}
+.strategy-stats span{font-size:.59rem;color:var(--muted)}
+.strategy-stats b{margin-top:2px;font-size:.72rem}
+
+.timeline{display:grid}
+.timeline-row{display:grid;grid-template-columns:22px 1fr;gap:11px}
+.timeline-mark{display:flex;flex-direction:column;align-items:center}
+.timeline-mark i{width:9px;height:9px;margin-top:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px var(--soft)}
+.timeline-mark::after{content:"";width:1px;flex:1;min-height:42px;background:var(--line)}
+.timeline-row:last-child .timeline-mark::after{display:none}
+.timeline-copy{padding-bottom:17px}
+.timeline-copy b,.timeline-copy span{display:block}
+.timeline-copy b{font-size:.8rem}
+.timeline-copy span{color:var(--muted);font-size:.68rem}
+
+/* Calendario */
+.calendar{overflow:hidden}
+.calendar-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:20px 22px;border-bottom:1px solid var(--line)}
+.calendar-head h2{margin:0;text-transform:capitalize}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr)}
+.weekday{padding:10px 4px;border-bottom:1px solid var(--line);background:#FAFAFA;color:#9CA3AF;text-align:center;font-size:.58rem;font-weight:700}
+.day{min-height:106px;padding:9px;border:0;border-right:1px solid #F0F1F2;border-bottom:1px solid #F0F1F2;background:#fff;color:var(--text);text-align:left}
+.day:nth-child(7n){border-right:0}
+.day.other{background:#FCFCFC;color:#B6BBC3}
+.day-num{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;font-size:.72rem;font-weight:650}
+.day.today .day-num{background:var(--text);color:#fff}
+.events{display:grid;gap:4px;margin-top:6px}
+.event{padding:3px 5px;border-radius:5px;background:var(--soft);color:#047857;font-size:.59rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.event.urgent{background:var(--redSoft);color:#B42318}
+
+/* Negociación, documentos, reportes */
+.case{padding:20px}
+.case-top{display:flex;justify-content:space-between;gap:12px}
+.case-top h3{margin-bottom:3px}
+.case-meta{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}
+.dropzone{min-height:190px;padding:28px;border:1px dashed #CBD0D7;border-radius:14px;background:#FAFAFA;display:grid;place-items:center;text-align:center}
+.dropzone.drag{border-color:var(--teal);background:var(--soft)}
+.dropzone strong,.dropzone span{display:block}
+.dropzone strong{margin-top:8px;font-size:.9rem}
+.dropzone span{margin:5px 0 14px;color:var(--muted);font-size:.72rem}
+.report-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.report-action{padding:15px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--text);text-align:left;display:flex;align-items:center;gap:12px}
+.report-action:hover{border-color:var(--line-strong);background:#FAFAFA;box-shadow:none}
+.report-action>i{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#4B5563;display:grid;place-items:center;font-style:normal}
+.report-action b,.report-action span{display:block}
+.report-action b{font-size:.78rem}
+.report-action span{margin-top:2px;color:var(--muted);font-size:.65rem}
+
+/* Asistente */
+.chat{min-height:570px;display:grid;grid-template-rows:1fr auto;overflow:hidden}
+.messages{max-height:560px;overflow:auto;padding:24px;display:flex;flex-direction:column;gap:12px}
+.message{max-width:min(80%,680px);padding:12px 14px;border-radius:13px;white-space:pre-wrap;font-size:.8rem}
+.message.bot{align-self:flex-start;background:#F9FAFB;border:1px solid var(--line);border-bottom-left-radius:4px}
+.message.user{align-self:flex-end;background:var(--text);color:#fff;border-bottom-right-radius:4px}
+.message small{display:block;margin-top:5px;opacity:.62;font-size:.61rem}
+.chat-form{display:flex;gap:10px;padding:14px;border-top:1px solid var(--line)}
+.chat-form .input{margin:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chip{padding:7px 11px;border:1px solid var(--line);background:#fff;color:#4B5563;font-size:.68rem}
+.chip:hover{background:#F9FAFB;border-color:var(--line-strong)}
+
+/* Configuración */
+.space-list{display:grid;gap:10px}
+.space-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.space-main{display:flex;align-items:center;gap:11px}
+.avatar{width:38px;height:38px;border:1px solid var(--line);border-radius:11px;background:#F9FAFB;color:#4B5563;display:grid;place-items:center;font-weight:680}
+.space-main b,.space-main span{display:block}
+.space-main b{font-size:.78rem}
+.space-main span{font-size:.65rem;color:var(--muted)}
+.switch{position:relative;width:44px;height:24px;flex:none}
+.switch input{opacity:0;width:0;height:0}
+.slider{position:absolute;inset:0;border-radius:999px;background:#D1D5DB;transition:.2s}
+.slider::before{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(17,24,39,.18);transition:.2s}
+.switch input:checked+.slider{background:var(--teal)}
+.switch input:checked+.slider::before{transform:translateX(20px)}
+.more-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.more-link{min-height:116px;padding:18px;border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--text);text-align:left}
+.more-link:hover{border-color:var(--line-strong);background:#FAFAFA;box-shadow:none}
+.more-link i,.more-link b,.more-link span{display:block}
+.more-link i{margin-bottom:17px;color:var(--teal2);font-size:1rem;font-style:normal}
+.more-link b{font-size:.82rem}
+.more-link span{margin-top:3px;color:var(--muted);font-size:.66rem}
+
+/* Modal y notificaciones */
+.modal-root{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-root.open{display:flex}
+.backdrop{position:absolute;inset:0;background:rgba(17,24,39,.52);backdrop-filter:blur(4px)}
+.modal{position:relative;width:min(620px,100%);max-height:88vh;overflow:auto;border:1px solid rgba(255,255,255,.35);border-radius:18px;background:#fff;box-shadow:var(--shadow-float);animation:pop .18s ease}
+.modal.wide{width:min(900px,100%)}
+.modal-head{position:sticky;top:0;z-index:2;padding:18px 22px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.97);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between}
+.modal-head h2{margin:0;font-size:1.1rem}
+.close{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#6B7280;font-size:1.2rem}
+.modal-body{padding:22px}
+.modal-foot{display:flex;justify-content:flex-end;gap:9px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.99)}to{opacity:1;transform:none}}
+.toast-root{position:fixed;right:20px;bottom:20px;z-index:200;display:grid;gap:8px;width:min(350px,calc(100vw - 40px))}
+.toast{padding:13px 15px;border-radius:12px;background:var(--text);color:#fff;box-shadow:0 12px 30px rgba(17,24,39,.16)}
+.toast.good{background:#065F46}
+.toast.bad{background:#991B1B}
+.toast b,.toast span{display:block}
+.toast b{font-size:.78rem}
+.toast span{margin-top:2px;font-size:.66rem;opacity:.78}
+
+@media(max-width:1120px){
+  .grid-main,.dashboard-grid{grid-template-columns:1fr}
+  .strategy-grid{grid-template-columns:1fr}
+  .strategy p{min-height:0}
+  .balance-overview{grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr)}
+}
+
+@media(max-width:920px){
+  :root{--side:220px}
+  .welcome-grid{grid-template-columns:1fr;max-width:680px;gap:48px}
+  .welcome-copy{text-align:center}
+  .logo-line{justify-content:center;margin-bottom:36px}
+  .features span{justify-content:center;text-align:center}
+  .balance-overview{grid-template-columns:1fr}
+  .action-panel{border-left:0;border-top:1px solid var(--line)}
+  .form-3{grid-template-columns:1fr 1fr}
+  .donut-layout{grid-template-columns:130px 1fr}
+  .donut{width:128px}
+  .donut::after{inset:22px}
+}
+
+@media(max-width:760px){
+  body{padding-bottom:84px}
+  .sidebar{display:none}
+  .main{margin:0}
+  .topbar{min-height:68px;padding:10px 24px}
+  .topbar>div:first-child{display:none}
+  .mobile-brand{display:flex}
+  .mobile-brand .logo-mark{width:34px;height:34px;border-radius:9px;font-size:.9rem}
+  .mobile-brand b{font-size:.95rem;letter-spacing:-.03em}
+  .space-select{max-width:132px;min-height:39px;font-size:.72rem}
+  .desktop-only{display:none}
+  .content{padding:26px 24px 44px}
+  .page-head,.dashboard-head{align-items:flex-start;margin-bottom:24px}
+  .page-head .button-row,.dashboard-head .button-row{display:none}
+  .page-head h1,.dashboard-head h1{font-size:1.8rem}
+  .page-head p,.dashboard-head p{font-size:.8rem}
+  .balance-main{padding:26px 24px 20px}
+  .balance-amount{font-size:2.35rem}
+  .sparkline-wrap{height:96px;margin-top:22px}
+  .action-panel{padding:24px}
+  .action-panel h2{font-size:1.2rem}
+  .summary-strip{grid-template-columns:repeat(2,1fr)}
+  .summary-item{padding:16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .summary-item:nth-child(2n){border-right:0}
+  .summary-item:nth-last-child(-n+2){border-bottom:0}
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .metric.card{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .metric.card:nth-child(2n){border-right:0}
+  .metric.card:nth-last-child(-n+2){border-bottom:0}
+  .metric small{display:block}
+  .grid-2,.grid-main,.dashboard-grid{grid-template-columns:1fr}
+  .pad{padding:20px}
+  .desktop-table{display:none}
+  .mobile-cards{display:grid}
+  .form-2,.form-3{grid-template-columns:1fr}
+  .full{grid-column:auto}
+  .toolbar{align-items:stretch}
+  .toolbar-group{width:100%}
+  .search{min-width:0;flex:1}
+  .calendar-head h2{font-size:1rem}
+  .day{min-height:72px;padding:6px}
+  .weekday{font-size:.52rem}
+  .event{width:7px;height:7px;padding:0;border-radius:50%;font-size:0}
+  .events{display:flex;gap:3px;flex-wrap:wrap}
+  .report-grid{grid-template-columns:1fr}
+  .chat{min-height:calc(100vh - 194px)}
+  .message{max-width:90%}
+  .donut-layout{grid-template-columns:122px 1fr;gap:18px}
+  .donut{width:120px}
+  .donut::after{inset:21px}
+  .bottom-nav{
+    position:fixed;
+    z-index:50;
+    left:0;
+    right:0;
+    bottom:0;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    padding:7px 10px calc(7px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.97);
+    backdrop-filter:blur(16px);
+    border-top:1px solid var(--line);
+    box-shadow:none;
+  }
+  .bottom-nav button{min-height:50px;border:0;background:transparent;color:#9CA3AF;display:grid;justify-items:center;align-content:center;gap:3px;font-size:.56rem;font-weight:620}
+  .bottom-nav button span{display:grid;place-items:center;font-size:1rem}
+  .bottom-nav .nav-icon{width:19px;height:19px}
+  .bottom-nav button.active{color:var(--teal2)}
+  .toast-root{bottom:92px;right:16px;width:calc(100vw - 32px)}
+  .modal-root{align-items:flex-end;padding:0}
+  .modal,.modal.wide{width:100%;max-height:92vh;border-radius:20px 20px 0 0;border-bottom:0}
+  .welcome{padding:26px 24px;align-items:start}
+  .welcome-copy{padding-top:8px}
+  .welcome-copy h1{font-size:2.75rem}
+  .features{display:none}
+  .onboarding{padding:22px}
+  .profile-picker{grid-template-columns:1fr}
+  .profile-choice{min-height:58px;display:flex;align-items:center;gap:12px;text-align:left;padding:12px 14px}
+  .profile-choice.active{padding:12px 14px}
+  .profile-choice span{margin:0}
+  .more-grid{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:430px){
+  .content{padding-left:24px;padding-right:24px}
+  .topbar{padding-left:20px;padding-right:20px}
+  .balance-heading{align-items:flex-start;flex-direction:column;gap:8px}
+  .balance-amount{font-size:2.12rem}
+  .balance-caption{gap:8px}
+  .action-meta{grid-template-columns:1fr}
+  .summary-item b{font-size:1.05rem}
+  .quick-grid{grid-template-columns:1fr 1fr}
+  .donut-layout{grid-template-columns:1fr;justify-items:center}
+  .legend-list{width:100%}
+  .top-actions .icon-btn{display:none}
+  .more-grid{grid-template-columns:1fr}
+}
+
+@media print{
+  .sidebar,.topbar,.bottom-nav,.btn,.ad,.toolbar{display:none!important}
+  .main{margin:0}
+  .content{padding:0}
+  .card,.hero{box-shadow:none}
+  body{background:#fff}
+}
+
+</style>
 </head>
 <body>
   <section id="welcome" class="welcome hidden">
@@ -23,8 +792,8 @@
       <div class="welcome-copy">
         <div class="logo-line"><span class="logo-mark">S</span><span><b>Saldía</b><small>Tu saldo, al día</small></span></div>
         <span class="kicker">PROTOTIPO FUNCIONAL · COSTA RICA</span>
-        <h1>Ordená tus deudas sin sentirte juzgado.</h1>
-        <p>Registrá lo que debés, compará estrategias y convertí una situación difícil en un plan claro, paso a paso.</p>
+        <h1>Un plan claro para volver a respirar.</h1>
+        <p>Organizá todas tus deudas, compará estrategias y avanzá con decisiones sencillas, sin ruido visual y sin sentirte juzgado.</p>
         <div class="features">
           <span>✓ Deudas, escenarios e historial sin límites</span>
           <span>✓ Perfiles personales, familiares y de negocio</span>
@@ -37,9 +806,15 @@
         <p class="muted">Podrás cambiar estos datos y crear más espacios después.</p>
         <input type="hidden" name="type" id="onboardingType" value="personal">
         <div class="profile-picker">
-          <button type="button" class="profile-choice active" data-profile="personal"><span>👤</span>Para mí</button>
-          <button type="button" class="profile-choice" data-profile="family"><span>👥</span>Familia</button>
-          <button type="button" class="profile-choice" data-profile="business"><span>💼</span>Negocio</button>
+          <button type="button" class="profile-choice active" data-profile="personal">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></span>Para mí
+          </button>
+          <button type="button" class="profile-choice" data-profile="family">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Familia
+          </button>
+          <button type="button" class="profile-choice" data-profile="business">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg></span>Negocio
+          </button>
         </div>
         <label>Nombre del espacio<input class="input" name="name" id="onboardingName" value="Mi plan personal" required></label>
         <div class="form-2">
@@ -48,7 +823,7 @@
         </div>
         <button class="btn primary wide" type="submit">Crear mi espacio →</button>
         <div class="or"><span>o</span></div>
-        <button class="btn secondary wide" type="button" data-action="load-demo">✨ Probar con datos de ejemplo</button>
+        <button class="btn secondary wide" type="button" data-action="load-demo">Probar con datos de ejemplo</button>
         <small class="muted centered">No necesitás una cuenta para probar.</small>
       </form>
     </div>
@@ -59,18 +834,18 @@
       <button class="brand" data-action="view" data-view="dashboard"><span class="logo-mark">S</span><span><b>Saldía</b><small>Tu saldo, al día</small></span></button>
       <span class="nav-title">TU PLAN</span>
       <nav>
-        <button data-view="dashboard">⌂ <span>Inicio</span></button>
-        <button data-view="debts">▣ <span>Deudas</span></button>
-        <button data-view="plan">↗ <span>Plan</span></button>
-        <button data-view="calendar">□ <span>Calendario</span></button>
+        <button data-view="dashboard"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5M9 20v-6h6v6"/></svg><span>Inicio</span></button>
+        <button data-view="debts"><svg class="nav-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg><span>Deudas</span></button>
+        <button data-view="plan"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 17l5-5 4 4 7-8"/><path d="M15 8h5v5"/></svg><span>Plan</span></button>
+        <button data-view="calendar"><svg class="nav-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span>Calendario</span></button>
       </nav>
       <span class="nav-title">HERRAMIENTAS</span>
       <nav>
-        <button data-view="negotiation">◌ <span>Negociar</span></button>
-        <button data-view="documents">▤ <span>Documentos</span></button>
-        <button data-view="reports">▥ <span>Reportes</span></button>
-        <button data-view="assistant">✦ <span>Asistente</span></button>
-        <button data-view="settings">⚙ <span>Configuración</span></button>
+        <button data-view="negotiation"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3v-7a7 7 0 1 1 18 0Z"/><path d="M8 11h8M8 15h5"/></svg><span>Negociar</span></button>
+        <button data-view="documents"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg><span>Documentos</span></button>
+        <button data-view="reports"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Reportes</span></button>
+        <button data-view="assistant"><svg class="nav-icon" viewBox="0 0 24 24"><path d="m12 3 1.2 3.8L17 8l-3.8 1.2L12 13l-1.2-3.8L7 8l3.8-1.2Z"/><path d="m19 14 .8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8Z"/><path d="m5 14 .7 1.8 1.8.7-1.8.7L5 19l-.7-1.8-1.8-.7 1.8-.7Z"/></svg><span>Asistente</span></button>
+        <button data-view="settings"><svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.03 1.56V21h-4v-.08A1.7 1.7 0 0 0 8.97 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3v-4h.08A1.7 1.7 0 0 0 4.6 8.97a1.7 1.7 0 0 0-.34-1.88l-.06-.06L7.03 4.2l.06.06A1.7 1.7 0 0 0 8.97 4.6 1.7 1.7 0 0 0 10 3.08V3h4v.08A1.7 1.7 0 0 0 15.03 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06a1.7 1.7 0 0 0-.34 1.88A1.7 1.7 0 0 0 20.92 10H21v4h-.08A1.7 1.7 0 0 0 19.4 15Z"/></svg><span>Configuración</span></button>
       </nav>
       <div class="local-box"><b><i></i> Prototipo local</b><span>Tus datos se guardan solo en este navegador.</span></div>
     </aside>
@@ -80,7 +855,7 @@
         <div><h2 id="viewTitle">Inicio</h2><small id="viewSubtitle">Tu panorama financiero de hoy</small></div>
         <div class="mobile-brand"><span class="logo-mark">S</span><b>Saldía</b></div>
         <div class="top-actions">
-          <button class="icon-btn desktop-only" data-action="privacy" title="Ocultar montos">◉</button>
+          <button class="icon-btn desktop-only" data-action="privacy" title="Ocultar montos" aria-label="Ocultar o mostrar montos"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button>
           <select id="spaceSelect" class="space-select"></select>
           <button class="btn accent desktop-only" data-action="add-debt">＋ Agregar deuda</button>
         </div>
@@ -89,18 +864,19 @@
     </div>
 
     <nav class="bottom-nav">
-      <button data-view="dashboard"><span>⌂</span>Inicio</button>
-      <button data-view="debts"><span>▣</span>Deudas</button>
-      <button data-view="plan"><span>↗</span>Plan</button>
-      <button data-view="calendar"><span>□</span>Calendario</button>
-      <button data-view="more"><span>•••</span>Más</button>
+      <button data-view="dashboard"><span><svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5M9 20v-6h6v6"/></svg></span>Inicio</button>
+      <button data-view="debts"><span><svg class="nav-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span>Deudas</button>
+      <button data-view="plan"><span><svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 17l5-5 4 4 7-8"/><path d="M15 8h5v5"/></svg></span>Plan</button>
+      <button data-view="calendar"><span><svg class="nav-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span>Calendario</button>
+      <button data-view="more"><span><svg class="nav-icon" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></span>Más</button>
     </nav>
   </div>
 
   <div id="modalRoot" class="modal-root"></div>
   <div id="toastRoot" class="toast-root"></div>
   <input id="fileInput" class="hidden" type="file" multiple accept=".csv,.json,.pdf,.txt,image/*">
-  <script>
+  
+<script>
 (()=>{
 'use strict';
 const KEY='saldia_state_v1',VERSION='1.0.0-prototype';
@@ -136,13 +912,69 @@ function upcoming(s,limit=10){const now=new Date();return s.debts.filter(d=>n(d.
 function duration(r){if(!r.initial)return'Sin deudas';if(r.months==null)return'Revisá el plan';if(r.months===1)return'1 mes';if(r.months<24)return`${r.months} meses`;return`${Math.floor(r.months/12)} años y ${r.months%12} meses`}
 function finish(r){if(r.months==null)return'No calculable';if(r.months===0)return'Hoy';return monthFmt(addMonths(new Date(),r.months))}
 function metric(icon,label,value,foot,color=''){return`<div class="card metric"><div class="metric-icon ${color}">${icon}</div><span>${esc(label)}</span><b class="${app.state.settings.privacy?'masked':''}">${esc(value)}</b><small>${esc(foot)}</small></div>`}
-function ad(){return`<div class="ad"><div class="ad-icon">◇</div><div><b>Espacio para un patrocinador responsable</b><span>La publicidad real aparecería aquí, sin interrumpir ni usar saldos para segmentación.</span></div></div>`}
+function ad(){return`<aside class="ad" aria-label="Publicidad"><div class="ad-icon">AD</div><div><b>Patrocinador responsable</b><span>Este espacio será discreto y nunca usará tus saldos para segmentarte.</span></div></aside>`}
 function empty(icon,title,copy,button=''){return`<div class="card empty"><div class="empty-icon">${icon}</div><h2>${esc(title)}</h2><p>${esc(copy)}</p>${button}</div>`}
 function render(){const has=app.state.spaces.length>0;$('#welcome').classList.toggle('hidden',has);$('#appShell').classList.toggle('hidden',!has);if(!has)return;const s=space();updateSelect();updateNav();const meta=META[app.view]||META.dashboard;$('#viewTitle').textContent=meta[0];$('#viewSubtitle').textContent=meta[1];$('#content').innerHTML=viewHTML(s);bindView()}
 function updateSelect(){const el=$('#spaceSelect');el.innerHTML=app.state.spaces.map(s=>`<option value="${esc(s.id)}" ${s.id===app.state.active?'selected':''}>${esc(s.name)}</option>`).join('')+'<option value="__new">＋ Nuevo espacio</option>'}
 function updateNav(){$$('.sidebar nav button,.bottom-nav button').forEach(b=>{const v=b.dataset.view,active=v===app.view||(v==='more'&&['more','negotiation','documents','reports','assistant','settings'].includes(app.view));b.classList.toggle('active',active)})}
 function viewHTML(s){return({dashboard:dashboardHTML,debts:debtsHTML,plan:planHTML,calendar:calendarHTML,negotiation:negotiationHTML,documents:documentsHTML,reports:reportsHTML,assistant:assistantHTML,settings:settingsHTML,more:moreHTML}[app.view]||dashboardHTML)(s)}
-function dashboardHTML(s){const t=totals(s),p=simulate(s),up=upcoming(s,5),intro={personal:'Hoy podés dar un paso concreto hacia una vida financiera más tranquila.',family:'Organicemos las obligaciones del hogar con claridad y privacidad.',business:'Mantené visibles las obligaciones del negocio y protegé el flujo operativo.'}[s.type];if(!t.active.length)return`<div class="page-head"><div><span class="kicker">${PROFILES[s.type]}</span><h1>${esc(s.name)}</h1><p>${esc(intro)}</p></div></div>${empty('▣','Agregá tu primera deuda','Ingresá saldo, tasa, pago mínimo y día de pago para comparar estrategias.',`<button class="btn primary" data-action="add-debt">＋ Agregar deuda</button>`)}<div style="margin-top:18px">${ad()}</div>`;const next=up[0],gap=t.available-(t.minimum+n(s.extra)),action=next?`${next.days<=0?'Atendé hoy':`En ${next.days} día${next.days===1?'':'s'}`}: reservá ${money(next.debt.minimum,next.debt.currency)}`:'Tu calendario está al día';const dist=Object.entries(t.active.reduce((a,d)=>{const k=TYPES[d.type]||'Otro';a[k]=(a[k]||0)+base(d.balance,d.currency,s);return a},{})).sort((a,b)=>b[1]-a[1]);return`<div class="page-head"><div><span class="kicker">${PROFILES[s.type]}</span><h1>${esc(s.name)}</h1><p>${esc(intro)}</p></div><div class="button-row"><button class="btn secondary" data-action="pay">✓ Registrar pago</button><button class="btn primary" data-action="add-debt">＋ Nueva deuda</button></div></div><section class="hero"><div class="hero-grid"><div><span class="kicker" style="color:#8ee4cf">TU PRÓXIMA ACCIÓN</span><h1>${esc(action)}</h1><p>${next?`${esc(next.debt.creditor)} vence el ${dateFmt(next.due,false)}. Registrar el pago recalculará el plan.`:'No hay obligaciones activas próximas.'}</p><div class="button-row">${next?`<button class="btn secondary" data-action="pay" data-id="${next.debt.id}">✓ Registrar este pago</button>`:''}<button class="btn ghost" data-action="view" data-view="calendar">Ver calendario →</button></div></div><div class="hero-stat"><span>Fecha estimada para terminar</span><b class="${app.state.settings.privacy?'masked':''}">${finish(p)}</b><small>Con ${STRATEGIES[s.strategy].name.toLowerCase()} y ${money(s.extra)} extra al mes.</small></div></div></section><section class="metrics">${metric('▣','Deuda total',money(t.balance),`${t.active.length} obligaciones activas`)}${metric('◫','Pagos mínimos',money(t.minimum),'Compromiso mensual','green')}${metric('↗','Tiempo estimado',duration(p),p.months==null?'Aumentá el pago':`Salida en ${finish(p)}`)}${metric('!','Atención prioritaria',String(t.urgent),t.urgent?'Atrasadas o judiciales':'Sin atrasos','orange')}</section>${gap<0?`<div class="notice warning" style="margin-bottom:14px"><b>⚠</b><div><b>El plan supera tu flujo disponible</b><p>Ingresos menos gastos esenciales dejan ${money(t.available)}, pero el plan requiere ${money(t.minimum+n(s.extra))}.</p></div></div>`:''}<section class="grid-main"><div class="stack"><div class="card pad"><div class="section-head"><div><h2>Avance del plan</h2><p>Comparado con los saldos originales.</p></div><span class="pill">${t.progress.toFixed(1)}%</span></div><div class="progress"><i style="width:${t.progress}%"></i></div><div class="progress-copy"><span>Pagado: <b class="${app.state.settings.privacy?'masked':''}">${money(Math.max(0,t.original-t.balance))}</b></span><span>Restante: <b class="${app.state.settings.privacy?'masked':''}">${money(t.balance)}</b></span></div><div class="divider"></div><div class="section-head"><div><h3>Distribución</h3><p>Por tipo de deuda.</p></div></div><div class="list">${dist.slice(0,5).map(([k,v])=>`<div class="list-row"><div class="list-copy" style="flex:1"><b>${esc(k)}</b><div class="progress" style="height:7px;margin-top:7px"><i style="width:${t.balance?v/t.balance*100:0}%"></i></div></div><div class="list-value"><b class="${app.state.settings.privacy?'masked':''}">${money(v)}</b><span>${t.balance?(v/t.balance*100).toFixed(0):0}%</span></div></div>`).join('')}</div></div>${ad()}</div><div class="stack"><div class="card pad"><div class="section-head"><div><h2>Próximos pagos</h2><p>Ordenados por fecha.</p></div><button class="btn ghost small-btn" data-action="view" data-view="calendar">Ver todos</button></div><div class="list">${up.map(x=>`<div class="list-row"><div class="list-main"><div class="list-icon">${x.debt.type==='credit_card'?'▤':'▣'}</div><div class="list-copy"><b>${esc(x.debt.creditor)}</b><span>${x.days<=0?'Vence hoy':`En ${x.days} días`} · ${STATUSES[x.debt.status]}</span></div></div><div class="list-value"><b class="${app.state.settings.privacy?'masked':''}">${money(x.debt.minimum,x.debt.currency)}</b><span>${dateFmt(x.due,false)}</span></div></div>`).join('')}</div></div><div class="card pad"><div class="section-head"><div><h2>Acciones rápidas</h2><p>Lo más frecuente.</p></div></div><div class="quick-grid"><button class="quick" data-action="pay"><span>✓</span>Registrar pago</button><button class="quick" data-action="view" data-view="plan"><span>✦</span>Simular escenario</button><button class="quick" data-action="new-case"><span>◌</span>Preparar negociación</button><button class="quick" data-action="view" data-view="reports"><span>⇩</span>Descargar reporte</button></div></div></div></section>`}
+function dashboardHTML(s){
+  const t=totals(s),p=simulate(s),up=upcoming(s,6),intro={personal:'Hoy podés dar un paso concreto hacia una vida financiera más tranquila.',family:'Organicemos las obligaciones del hogar con claridad y privacidad.',business:'Mantené visibles las obligaciones del negocio y protegé el flujo operativo.'}[s.type];
+  if(!t.active.length)return`<div class="dashboard-head"><div><span class="eyebrow">${PROFILES[s.type]}</span><h1>${esc(s.name)}</h1><p>${esc(intro)}</p></div></div>${empty('＋','Agregá tu primera deuda','Ingresá saldo, tasa, pago mínimo y día de pago para crear un plan claro.',`<button class="btn primary" data-action="add-debt">Agregar deuda</button>`)}<div style="margin-top:24px">${ad()}</div>`;
+  const next=up[0],gap=t.available-(t.minimum+n(s.extra)),planMonthly=t.minimum+n(s.extra),paid=Math.max(0,t.original-t.balance);
+  const action=next?`${next.days<=0?'Atendé hoy':`En ${next.days} día${next.days===1?'':'s'}`}: reservá ${money(next.debt.minimum,next.debt.currency)}`:'Tu calendario está al día';
+  const dist=Object.entries(t.active.reduce((a,d)=>{const k=TYPES[d.type]||'Otro';a[k]=(a[k]||0)+base(d.balance,d.currency,s);return a},{})).sort((a,b)=>b[1]-a[1]);
+  const top=dist.slice(0,3),rest=dist.slice(3).reduce((a,x)=>a+x[1],0),parts=rest>0?[...top,['Otros',rest]]:top;
+  const palette=['#111111','#10B981','#9CA3AF','#E5E7EB'];let acc=0;
+  const stops=parts.map((x,i)=>{const from=acc,pct=t.balance?x[1]/t.balance*100:0;acc+=pct;return`${palette[i%palette.length]} ${from.toFixed(2)}% ${acc.toFixed(2)}%`}).join(',');
+  const timeline=p.timeline||[],values=[p.initial||t.balance],samples=7;
+  if(timeline.length){for(let i=1;i<=samples;i++){const idx=Math.min(timeline.length-1,Math.round(i/samples*(timeline.length-1)));values.push(timeline[idx].remaining)}}else values.push(t.balance);
+  const maxV=Math.max(...values,1),minV=Math.min(...values),range=Math.max(1,maxV-minV),w=520,h=110,pad=8;
+  const points=values.map((v,i)=>`${(pad+i*(w-pad*2)/Math.max(1,values.length-1)).toFixed(1)},${(pad+(maxV-v)/range*(h-pad*2)).toFixed(1)}`).join(' ');
+  const area=`${pad},${h-pad} ${points} ${w-pad},${h-pad}`;
+  const recent=[...s.payments].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,5);
+  return`<div class="dashboard-head"><div><span class="eyebrow">${PROFILES[s.type]}</span><h1>${esc(s.name)}</h1><p>${esc(intro)}</p></div><div class="button-row"><button class="btn secondary" data-action="pay">Registrar pago</button><button class="btn primary" data-action="add-debt">Nueva deuda</button></div></div>
+  <section class="card balance-overview">
+    <div class="balance-main">
+      <div class="balance-heading"><span class="balance-label">Deuda total pendiente</span><span class="balance-chip">${t.progress.toFixed(1)}% completado</span></div>
+      <strong class="balance-amount ${app.state.settings.privacy?'masked':''}">${money(t.balance)}</strong>
+      <div class="balance-caption"><span>${t.active.length} obligaciones activas</span><span>•</span><span><b class="${app.state.settings.privacy?'masked':''}">${money(paid)}</b> reducidos</span></div>
+      <div class="sparkline-wrap" aria-label="Proyección estimada de reducción de deuda">
+        <svg viewBox="0 0 ${w} ${h}" role="img"><title>Proyección del plan</title><polygon class="sparkline-area" points="${area}"></polygon><polyline class="sparkline-line" points="${points}"></polyline><circle class="sparkline-dot" cx="${points.split(' ')[0].split(',')[0]}" cy="${points.split(' ')[0].split(',')[1]}" r="4"></circle><circle class="sparkline-dot" cx="${points.split(' ').at(-1).split(',')[0]}" cy="${points.split(' ').at(-1).split(',')[1]}" r="4"></circle></svg>
+        <div class="sparkline-labels"><span>Hoy</span><span>Proyección · ${finish(p)}</span></div>
+      </div>
+    </div>
+    <aside class="action-panel">
+      <span class="eyebrow">Próxima acción</span>
+      <h2>${esc(action)}</h2>
+      <p>${next?`${esc(next.debt.creditor)} vence el ${dateFmt(next.due,false)}. Registrar el pago recalculará automáticamente el plan.`:'No hay obligaciones activas próximas.'}</p>
+      <div class="action-meta"><div><span>Salida estimada</span><b>${finish(p)}</b></div><div><span>Estrategia</span><b>${STRATEGIES[s.strategy].name}</b></div></div>
+      <div class="button-row">${next?`<button class="btn primary" data-action="pay" data-id="${next.debt.id}">Registrar pago</button>`:''}<button class="btn ghost" data-action="view" data-view="calendar">Ver calendario →</button></div>
+    </aside>
+  </section>
+  <section class="summary-strip">
+    <div class="summary-item"><span>Pago mínimo mensual</span><b class="${app.state.settings.privacy?'masked':''}">${money(t.minimum)}</b><small>Compromiso actual</small></div>
+    <div class="summary-item"><span>Flujo disponible</span><b class="${app.state.settings.privacy?'masked':''} ${gap>=0?'amount-positive':'amount-negative'}">${money(t.available)}</b><small>Ingresos menos esenciales</small></div>
+    <div class="summary-item"><span>Plan mensual</span><b class="${app.state.settings.privacy?'masked':''}">${money(planMonthly)}</b><small>Incluye ${money(s.extra)} extra</small></div>
+    <div class="summary-item"><span>Atención prioritaria</span><b class="${t.urgent?'amount-negative':''}">${t.urgent}</b><small>${t.urgent?'Atrasadas o judiciales':'Todo al día'}</small></div>
+  </section>
+  ${gap<0?`<div class="notice warning" style="margin-bottom:24px"><b>!</b><div><b>El plan supera tu flujo disponible</b><p>Tu flujo disponible es ${money(t.available)}, pero el plan necesita ${money(planMonthly)} al mes. Ajustá el pago extra o revisá gastos esenciales.</p></div></div>`:''}
+  <section class="dashboard-grid">
+    <div class="stack">
+      <section class="card pad"><div class="section-head"><div><h2>Actividad reciente</h2><p>Pagos registrados en tu historial.</p></div><button class="btn ghost small-btn" data-action="view" data-view="reports">Ver historial</button></div>
+        ${recent.length?`<div class="activity-list">${recent.map(x=>`<div class="activity-row"><div class="activity-main"><div class="activity-icon"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div><div class="activity-copy"><b>${esc(x.creditor||'Pago registrado')}</b><span>${dateFmt(`${x.date}T12:00:00`)}${x.note?` · ${esc(x.note)}`:''}</span></div></div><div class="activity-value"><b class="amount-positive ${app.state.settings.privacy?'masked':''}">− ${money(x.amount,x.currency)}</b><span>Reducción</span></div></div>`).join('')}</div>`:empty('✓','Todavía no hay pagos','Cuando registres un pago aparecerá aquí.')}
+      </section>
+      <section class="card pad"><div class="section-head"><div><h2>Próximos pagos</h2><p>Lo que necesita atención primero.</p></div><button class="btn ghost small-btn" data-action="view" data-view="calendar">Ver calendario</button></div>
+        <div class="activity-list">${up.map(x=>`<div class="activity-row"><div class="activity-main"><div class="activity-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></div><div class="activity-copy"><b>${esc(x.debt.creditor)}</b><span>${x.days<=0?'Vence hoy':`En ${x.days} días`} · ${STATUSES[x.debt.status]}</span></div></div><div class="activity-value"><b class="${app.state.settings.privacy?'masked':''}">${money(x.debt.minimum,x.debt.currency)}</b><span>${dateFmt(x.due,false)}</span></div></div>`).join('')}</div>
+      </section>
+    </div>
+    <aside class="stack">
+      <section class="card pad"><div class="section-head"><div><h2>Distribución de deuda</h2><p>Las tres categorías principales.</p></div></div><div class="donut-layout"><div class="donut" style="background:conic-gradient(${stops||'#E5E7EB 0 100%'})"><div class="donut-center"><span>Total</span><b>${t.active.length} deudas</b></div></div><div class="legend-list">${parts.map((x,i)=>`<div class="legend-row"><i class="legend-dot" style="background:${palette[i%palette.length]}"></i><span>${esc(x[0])}</span><b>${t.balance?(x[1]/t.balance*100).toFixed(0):0}%</b></div>`).join('')}</div></div></section>
+      <section class="card pad"><div class="section-head"><div><h2>Acciones rápidas</h2><p>Lo más frecuente, sin pasos extra.</p></div></div><div class="quick-grid"><button class="quick" data-action="pay"><span>✓</span>Registrar pago</button><button class="quick" data-action="view" data-view="plan"><span>↗</span>Simular escenario</button><button class="quick" data-action="new-case"><span>○</span>Preparar negociación</button><button class="quick" data-action="view" data-view="reports"><span>↓</span>Descargar reporte</button></div></section>
+      ${ad()}
+    </aside>
+  </section>`
+}
 function debtsHTML(s){const t=totals(s),debts=s.debts.filter(d=>app.filter==='all'||(app.filter==='active'?n(d.balance)>0:d.status===app.filter)).sort((a,b)=>base(b.balance,b.currency,s)-base(a.balance,a.currency,s));return`<div class="page-head"><div><span class="kicker">OBLIGACIONES</span><h1>Todas tus deudas</h1><p>Agregá, editá y registrá pagos. CRC y USD se convierten con el tipo de cambio configurado.</p></div><div class="button-row"><button class="btn secondary" data-action="files">⇧ Importar</button><button class="btn primary" data-action="add-debt">＋ Agregar deuda</button></div></div><section class="metrics">${metric('▣','Saldo total',money(t.balance),`Convertido a ${s.currency}`)}${metric('◫','Pago mínimo',money(t.minimum),'Compromiso mensual','green')}${metric('!','Prioritarias',String(t.urgent),'Atrasadas o judiciales','orange')}${metric('✓','Progreso',`${t.progress.toFixed(1)}%`,'Desde saldos originales','green')}</section><section class="card pad"><div class="toolbar"><div class="toolbar-group"><input id="debtSearch" class="input search" placeholder="Buscar por acreedor o tipo"><select id="debtFilter" class="input" style="width:auto"><option value="all" ${app.filter==='all'?'selected':''}>Todos</option><option value="active" ${app.filter==='active'?'selected':''}>Activas</option><option value="current" ${app.filter==='current'?'selected':''}>Al día</option><option value="late" ${app.filter==='late'?'selected':''}>Atrasadas</option><option value="judicial" ${app.filter==='judicial'?'selected':''}>Cobro judicial</option><option value="agreement" ${app.filter==='agreement'?'selected':''}>Arreglo</option><option value="paid" ${app.filter==='paid'?'selected':''}>Pagadas</option></select></div><span class="pill">${debts.length} resultados</span></div>${debts.length?`<div class="desktop-table table-wrap"><table><thead><tr><th>Acreedor</th><th>Saldo</th><th>Tasa</th><th>Mínimo</th><th>Vence</th><th>Estado</th><th></th></tr></thead><tbody>${debts.map(d=>`<tr><td><b>${esc(d.creditor)}</b><br><small class="muted">${esc(TYPES[d.type])}${d.owner?` · ${esc(d.owner)}`:''}</small></td><td><b class="${app.state.settings.privacy?'masked':''}">${money(d.balance,d.currency)}</b></td><td>${n(d.apr).toFixed(2)}%</td><td class="${app.state.settings.privacy?'masked':''}">${money(d.minimum,d.currency)}</td><td>Día ${d.due}</td><td><span class="badge status-${d.status}">${STATUSES[d.status]}</span></td><td><div class="table-actions"><button class="btn ghost small-btn" data-action="pay" data-id="${d.id}">✓</button><button class="btn ghost small-btn" data-action="edit-debt" data-id="${d.id}">✎</button></div></td></tr>`).join('')}</tbody></table></div><div class="mobile-cards">${debts.map(d=>debtCard(d)).join('')}</div>`:empty('⌕','No encontramos deudas','Cambiá el filtro o agregá una obligación.',`<button class="btn primary" data-action="add-debt">＋ Agregar deuda</button>`)}</section>`}
 function debtCard(d){return`<article class="card debt-card"><div class="debt-top"><div><h3>${esc(d.creditor)}</h3><span class="muted">${esc(TYPES[d.type])}</span></div><span class="badge status-${d.status}">${STATUSES[d.status]}</span></div><div class="mini-grid"><div class="mini"><span>Saldo</span><b class="${app.state.settings.privacy?'masked':''}">${money(d.balance,d.currency)}</b></div><div class="mini"><span>Pago mínimo</span><b class="${app.state.settings.privacy?'masked':''}">${money(d.minimum,d.currency)}</b></div><div class="mini"><span>Tasa anual</span><b>${n(d.apr).toFixed(2)}%</b></div><div class="mini"><span>Vencimiento</span><b>Día ${d.due}</b></div></div><div class="button-row"><button class="btn primary small-btn" data-action="pay" data-id="${d.id}">✓ Pagar</button><button class="btn secondary small-btn" data-action="edit-debt" data-id="${d.id}">✎ Editar</button><button class="btn ghost small-btn" data-action="new-case" data-id="${d.id}">◌ Negociar</button></div></article>`}
 function planHTML(s){
@@ -222,7 +1054,7 @@ function paymentModal(debtId){
   $('#paymentForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.currentTarget),d=s.debts.find(x=>x.id===f.get('debtId')),asked=Math.max(0,n(f.get('amount')));if(!d||asked<=0)return toast('Monto inválido','Ingresá un pago mayor que cero.','bad');const actual=Math.min(asked,n(d.balance));d.balance=Math.max(0,n(d.balance)-actual);if(d.balance<=.009){d.balance=0;d.status='paid'}else if(['late','judicial'].includes(d.status))d.status='current';s.payments.push({id:id(),debtId:d.id,creditor:d.creditor,amount:actual,currency:d.currency,date:String(f.get('date')||localDateISO()),note:String(f.get('note')||'').trim(),createdAt:new Date().toISOString()});save();closeModal();render();toast('Pago registrado',`${money(actual,d.currency)} aplicado a ${d.creditor}.`,'good');if(asked>actual)toast('Monto ajustado','El pago se limitó al saldo registrado.','good')})
 }
 function budgetModal(){const s=space();modal('Editar presupuesto',`<form id="budgetForm"><div class="modal-body"><div class="form-2"><label>Ingreso mensual<input class="input" name="income" type="number" min="0" step="1" value="${s.income}"></label><label>Gastos esenciales<input class="input" name="expenses" type="number" min="0" step="1" value="${s.expenses}"></label></div><div class="form-2"><label>Pago extra mensual<input class="input" name="extra" type="number" min="0" step="1" value="${s.extra}"></label><label>Frecuencia de ingreso<select class="input" name="frequency"><option value="monthly" ${s.frequency==='monthly'?'selected':''}>Mensual</option><option value="biweekly" ${s.frequency==='biweekly'?'selected':''}>Quincenal</option><option value="weekly" ${s.frequency==='weekly'?'selected':''}>Semanal</option><option value="variable" ${s.frequency==='variable'?'selected':''}>Variable</option></select></label></div><div class="notice info"><b>i</b><div><b>Usá montos mensuales</b><p>Para ingresos variables, ingresá una estimación prudente en lugar del mejor mes.</p></div></div></div><div class="modal-foot"><button class="btn ghost" type="button" data-action="close-modal">Cancelar</button><button class="btn primary" type="submit">Guardar y recalcular</button></div></form>`);$('#budgetForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.currentTarget);s.income=Math.max(0,n(f.get('income')));s.expenses=Math.max(0,n(f.get('expenses')));s.extra=Math.max(0,n(f.get('extra')));s.frequency=f.get('frequency')||'monthly';save();closeModal();render();toast('Presupuesto actualizado','Todas las proyecciones fueron recalculadas.','good')})}
-function spaceModal(){modal('Crear un espacio',`<form id="spaceForm"><div class="modal-body"><div class="profile-picker"><button type="button" class="profile-choice active" data-space-profile="personal"><span>👤</span>Personal</button><button type="button" class="profile-choice" data-space-profile="family"><span>👥</span>Familia</button><button type="button" class="profile-choice" data-space-profile="business"><span>💼</span>Negocio</button></div><input type="hidden" name="type" id="spaceType" value="personal"><label>Nombre<input id="spaceName" class="input" name="name" value="Mi plan personal" required></label><div class="form-2"><label>Moneda principal<select class="input" name="currency"><option value="CRC">CRC</option><option value="USD">USD</option></select></label><label>Tipo de cambio CRC/USD<input class="input" name="rate" type="number" min="1" step="0.01" value="520"></label></div></div><div class="modal-foot"><button class="btn ghost" type="button" data-action="close-modal">Cancelar</button><button class="btn primary" type="submit">Crear espacio</button></div></form>`);$$('[data-space-profile]').forEach(b=>b.addEventListener('click',()=>{$$('[data-space-profile]').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('#spaceType').value=b.dataset.spaceProfile;$('#spaceName').value={personal:'Mi plan personal',family:'Mi hogar',business:'Mi negocio'}[b.dataset.spaceProfile]}));$('#spaceForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.currentTarget),x=newSpace({name:String(f.get('name')||'Mi espacio').trim(),type:f.get('type'),currency:f.get('currency'),rate:f.get('rate')});app.state.spaces.push(x);app.state.active=x.id;save();closeModal();app.view='dashboard';render();toast('Espacio creado',`${x.name} está listo para usar.`,'good')})}
+function spaceModal(){modal('Crear un espacio',`<form id="spaceForm"><div class="modal-body"><div class="profile-picker"><button type="button" class="profile-choice active" data-space-profile="personal"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></span>Personal</button><button type="button" class="profile-choice" data-space-profile="family"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Familia</button><button type="button" class="profile-choice" data-space-profile="business"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg></span>Negocio</button></div><input type="hidden" name="type" id="spaceType" value="personal"><label>Nombre<input id="spaceName" class="input" name="name" value="Mi plan personal" required></label><div class="form-2"><label>Moneda principal<select class="input" name="currency"><option value="CRC">CRC</option><option value="USD">USD</option></select></label><label>Tipo de cambio CRC/USD<input class="input" name="rate" type="number" min="1" step="0.01" value="520"></label></div></div><div class="modal-foot"><button class="btn ghost" type="button" data-action="close-modal">Cancelar</button><button class="btn primary" type="submit">Crear espacio</button></div></form>`);$$('[data-space-profile]').forEach(b=>b.addEventListener('click',()=>{$$('[data-space-profile]').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('#spaceType').value=b.dataset.spaceProfile;$('#spaceName').value={personal:'Mi plan personal',family:'Mi hogar',business:'Mi negocio'}[b.dataset.spaceProfile]}));$('#spaceForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.currentTarget),x=newSpace({name:String(f.get('name')||'Mi espacio').trim(),type:f.get('type'),currency:f.get('currency'),rate:f.get('rate')});app.state.spaces.push(x);app.state.active=x.id;save();closeModal();app.view='dashboard';render();toast('Espacio creado',`${x.name} está listo para usar.`,'good')})}
 function caseModal(debtId){
   const s=space(),debts=s.debts.filter(d=>n(d.balance)>0),selected=debts.find(d=>d.id===debtId)||debts[0];
   modal('Nueva negociación',`<form id="caseForm"><div class="modal-body"><label>Deuda relacionada<select class="input" name="debtId"><option value="">Negociación general</option>${debts.map(d=>`<option value="${d.id}" ${selected?.id===d.id?'selected':''}>${esc(d.creditor)} · ${money(d.balance,d.currency)}</option>`).join('')}</select></label><div class="form-2"><label>Objetivo<select class="input" name="goal"><option>Reducir la cuota</option><option>Crear un arreglo de pago</option><option>Reducir la tasa</option><option>Comparar un refinanciamiento</option><option>Consolidar obligaciones</option><option>Solicitar estado y condiciones</option><option>Otro</option></select></label><label>Pago máximo mensual (${s.currency})<input class="input" name="max" type="number" min="0" step="1" value="${selected?Math.round(minimumBase(selected,s)):0}"></label></div><label>Último contacto<input class="input" name="lastContact" type="date"></label><label>Situación y notas<textarea class="input" name="notes" rows="4" placeholder="Ej.: perdí parte de mis ingresos, quiero ponerme al día y necesito una cuota sostenible"></textarea></label><div class="notice warning"><b>!</b><div><b>No prometás un monto que no podés sostener</b><p>Usá el máximo como límite de preparación, no como compromiso automático.</p></div></div></div><div class="modal-foot"><button class="btn ghost" type="button" data-action="close-modal">Cancelar</button><button class="btn primary" type="submit">Crear expediente</button></div></form>`);
